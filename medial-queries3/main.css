@@ -1,3 +1,50 @@
 body {
   background: peachpuff;
 }
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+header{
+  width: 100%;
+  flex-grow: 1;
+  height: 20vh;
+  background-color: rgb(108, 108, 149);
+}
+main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+  height: 39vh;
+}
+main div{
+  width: 32%;
+  background-color: rgb(156, 105, 105);
+}
+footer{
+  width: 100%;
+  height: 39vh;
+  background-color: rgb(135, 95, 135);
+}
+
+@media(min-device-width: 600px) {
+
+  header{
+    height: 32vh;
+  }
+  main{
+    width: 80%;
+    height: 60vh;
+    margin-right: 15px;
+  }
+  main div{
+    height: 30vh;
+  }
+  footer{
+    width: 18%;
+    height: 61vh;
+  }
+}
